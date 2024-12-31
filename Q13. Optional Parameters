@@ -1,0 +1,12 @@
+// Function that accepts a required and an optional parameter
+void greet(String name, [String message = "Welcome"]) {
+  print("$message, $name!");
+}
+
+void main() {
+  // Call the greet function with only the required parameter
+  greet("Alice");  // Outputs: Welcome, Alice!
+
+  // Call the greet function with both parameters
+  greet("Bob", "Good Morning");  // Outputs: Good Morning, Bob!
+}
