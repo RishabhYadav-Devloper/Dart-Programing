@@ -1,0 +1,21 @@
+// Function to check if a string is a palindrome
+bool isPalindrome(String str) {
+  // Convert the string to lowercase to make the check case-insensitive
+  str = str.toLowerCase();
+  
+  // Reverse the string and compare it to the original string
+  String reversed = str.split('').reversed.join('');
+  return str == reversed;
+}
+
+void main() {
+  // Test string
+  String testString = "madam";
+
+  // Check if the string is a palindrome
+  if (isPalindrome(testString)) {
+    print("The string '$testString' is a palindrome.");
+  } else {
+    print("The string '$testString' is not a palindrome.");
+  }
+}
